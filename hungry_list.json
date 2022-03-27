@@ -1,0 +1,79 @@
+[{
+  "_id": {
+    "$oid": "623bf47e8589a86e85274eba"
+  },
+  "zipcode": "22030",
+  "name": "Chef Antonio",
+  "opentime": 1648267200,
+  "closetime": 1651377600,
+  "rating": 5,
+  "avg_price_per_person": 50,
+  "tags": [
+    "cooking for 15 years",
+    "combining a modern dining experience with traditional values"
+  ],
+  "description": "Chef Antonio has been cooking for 15 years! He is a creative thinker who has sound knowledge of the latest food trends, and who is intimately familiar with all the activities of the kitchen. Given his experience and creativity he can drive a business forward by combining a modern dining experience with traditional values.",
+  "menu_items": [
+    {
+      "id": {
+        "$oid": "623bf47e8589a86e85274eb2"
+      },
+      "name": "Lemon Garlic Shrimp",
+      "tags": [
+        "contains shellfish",
+        "tag2"
+      ],
+      "price": 7
+    },
+    {
+      "id": {
+        "$oid": "623bf47e8589a86e85274eb3"
+      },
+      "name": "Tuscan Chicken",
+      "tags": [
+        "prepared without gluten",
+        "tag2"
+      ],
+      "price": 7
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "623bf6328589a86e85274ebf"
+  },
+  "zipcode": "10001",
+  "name": "Chef David",
+  "opentime": 1648267200,
+  "closetime": 1651377600,
+  "rating": 4,
+  "avg_price_per_person": 50,
+  "tags": [
+    "French flavors",
+    "classic techniques and quality ingredients"
+  ],
+  "description": "Chef David grew up in France with a love for good food. His culinary passion led him to open restaurants in the south of France and New York. Inspired by the Mediterranean and French flavors of his home, Chef David specializes in fresh pastas, salads, sandwiches, and desserts. With a focus on classic techniques and quality ingredients, often imported, Chef David's creations will make you feel as if you're picnicking in the French countryside.",
+  "menu_items": [
+    {
+      "id": {
+        "$oid": "623bf47e8589a86e85274eb4"
+      },
+      "name": "Chicken Tenders",
+      "tags": [
+        "10 servings",
+        "contains dairy & gluten & eggs"
+      ],
+      "price": 5
+    },
+    {
+      "id": {
+        "$oid": "623bf47e8589a86e85274eb5"
+      },
+      "name": "Mini Cheeseburger Sliders",
+      "tags": [
+        "2 per person",
+        "contains gluten & dairy"
+      ],
+      "price": 5
+    }
+  ]
+}]

@@ -1,0 +1,30 @@
+
+/api/search_menus?zip_code=10001&deliver_time=1648442128   get
+
+/api/order  post  json
+
+{
+	"username":"Jack",
+	"phone":"000-000-000",
+	"zip_code":"10001",
+	"deliver_time":1648528728,
+	"address":"your address",
+	"chef_id":"623bf6328589a86e85274ebf",
+	"menu_items":[{
+		"menu_id":"623bf47e8589a86e85274eb4",
+		"name":"menu1",
+		"price":10,
+		"count":2
+	},
+	{
+		"menu_id":"623bf47e8589a86e85274eb4",
+		"name":"menu2",
+		"price":20,
+		"count":3
+	}],
+	"price":50,
+	"tip":10,
+	"tax":10,
+	"total":70,
+	"remark":"no pepper"
+}
