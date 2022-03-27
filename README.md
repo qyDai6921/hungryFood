@@ -1,6 +1,6 @@
 # hungryFood
 Software:   
-go1.17.8 (Enable Go modules integration: GOPROXY=https://goproxy.cn)
+go1.17.8 (Enable Go modules integration: GOPROXY=https://goproxy.cn)  
 MongoDB 4.2.19  
 MongoDBCompass (or other database tools)  
 GoLand 2020.3.4  
