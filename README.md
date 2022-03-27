@@ -7,7 +7,7 @@ GoLand 2020.3.4
 Postman 9.15.2  
 
 
-Step 1:  
+### Step 1:  
 Create your own MongoDB database as the format below:  
 	MongoAddr  = "127.0.0.1:27017"  
 	MongoUser  = "root"  
@@ -19,7 +19,7 @@ There are 2 collections you should create in your database, hungry_list and hund
 hungry_list shows the information of each chef, including the id, zip code, name, open time, close time, rating, average price per person, descriptions about his/her feature with 2 tags, and 2 menu items with 2 tags and price.  
 hundry_order shows the information of each custom’s requirement, including the id, zip code, username, deliver time, address, phone number, price, tax, tip, total price, order number, and 2 menu items with menu id, 2 tags, price and count.  
 
-Step 2:  
+### Step 2:  
 GET:  
 http://localhost/api/search_menus?zip_code=10001&deliver_time=1648442128  
 You can change the parameter values of “zip_code” and “deliver_time”, but cannot set them as null. Here are just 2 set of data in hungry_list, you can add more chefs data. Two important parameter are “zip_code” and “deliver_time”, and I set 2 options for “zip_code”, 10001 and 22030. The open time is 1648267200 and close time is 1651377600 in unix timestamp format, which means the deliver time should be between Sat Mar 26 2022 00:00:00 GMT-0400 and Sun May 01 2022 00:00:00 GMT-0400. If you enter unmatched zip code or unmatched delivery time with correct format, you will see data is null although the massage is correct.    
@@ -28,7 +28,7 @@ Here is an example result:
 ![menu](https://user-images.githubusercontent.com/91996082/160298388-9a36f99e-5b4c-4638-8b15-480b8d8937f2.PNG)
 
 
-Step 3:  
+### Step 3:  
 POST:  
 http://localhost/api/order  
 If you put the information of an order with correct JSON form in the body of request blank, you will see the below massage on the response body:  
