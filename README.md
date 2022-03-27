@@ -16,8 +16,8 @@ Create your own MongoDB database as the format below:
 You can change MongoAddr to your local IP address and use Postman to verify your GET and POST request.
 
 There are 2 collections you should create in your database, hungry_list and hundry_order. You can import these 2 collections under “hungryFood” folder.  
-hungry_list shows the information of each chef, including the id, zip code, name, open time, close time, rating, average price per person, descriptions about his/her feature with 2 tags, and 2 menu items with 2 tags and price.  
-hundry_order shows the information of each custom’s requirement, including the id, zip code, username, deliver time, address, phone number, price, tax, tip, total price, order number, and 2 menu items with menu id, 2 tags, price and count.  
+*hungry_list* shows the information of each chef, including the id, zip code, name, open time, close time, rating, average price per person, descriptions about his/her feature with 2 tags, and 2 menu items with 2 tags and price.  
+*hundry_order* shows the information of each custom’s requirement, including the id, zip code, username, deliver time, address, phone number, price, tax, tip, total price, order number, and 2 menu items with menu id, 2 tags, price and count.  
 
 ### Step 2:  
 GET:  
