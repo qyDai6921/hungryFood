@@ -57,7 +57,7 @@ func Order(req *define.OrderReq) (err error) {
 
 	var price int
 	for k, v := range req.MenuItems {
-		if val, ok := menus[v.MeunID]; ok {
+		if val, ok := menus[v.MenuID]; ok {
 			price += val.Price * v.Count
 			req.MenuItems[k].Id = bson.ObjectId(val.Id)
 		}
@@ -69,20 +69,20 @@ func Order(req *define.OrderReq) (err error) {
 	}
 
 	err = mongodb.Insert(define.TABLE_ORDER, bson.M{
-		"order_no": fmt.Sprintf("%v%v", time.Now().Nanosecond(), rand.Int31n(9999)),
-		"username": req.Username,
-		"phone":    req.Phone,
-		"remark":   req.Remark,
-		"address":  req.Address,
-		"zipcode": req.Zipcode,
-		"deliver_time":req.DeliverTime,
-		"price":price,
-		"tip":req.Tip,
-		"tax":req.Tax,
-		"total":req.Total,
-		"menus": req.MenuItems,
+		"order_no":     fmt.Sprintf("%v%v", time.Now().Nanosecond(), rand.Int31n(9999)),
+		"username":     req.Username,
+		"phone":        req.Phone,
+		"remark":       req.Remark,
+		"address":      req.Address,
+		"zipcode":      req.Zipcode,
+		"deliver_time": req.DeliverTime,
+		"price":        price,
+		"tip":          req.Tip,
+		"tax":          req.Tax,
+		"total":        req.Total,
+		"menus":        req.MenuItems,
 	})
-	if err != nil{
+	if err != nil {
 		err = errors.New("order fail")
 		return
 	}

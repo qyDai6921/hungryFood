@@ -43,41 +43,6 @@ func Init(dir string, file string, level int, savefile bool, prefix ...string) {
 	go log.run()
 }
 
-func Error(err ...interface{}) {
-	if LOG_ERROR > log.level {
-		return
-	}
-	log.write(LOG_ERROR, fmt.Sprint(err...))
-}
-
-func Waring(war ...interface{}) {
-	if LOG_WARING > log.level {
-		return
-	}
-	log.write(LOG_WARING, fmt.Sprint(war...))
-}
-
-func Info(info ...interface{}) {
-	if LOG_INFO > log.level {
-		return
-	}
-	log.write(LOG_INFO, fmt.Sprint(info...))
-}
-
-func Debug(deb ...interface{}) {
-	if LOG_DEBUG > log.level {
-		return
-	}
-	log.write(LOG_DEBUG, fmt.Sprint(deb...))
-}
-
-func Trace(deb ...interface{}) {
-	if LOG_TRACE > log.level {
-		return
-	}
-	log.write(LOG_TRACE, fmt.Sprint(deb...))
-}
-
 func Errorf(format string, v ...interface{}) {
 	if LOG_ERROR > log.level {
 		return
@@ -85,32 +50,11 @@ func Errorf(format string, v ...interface{}) {
 	log.write(LOG_ERROR, fmt.Sprintf(format, v...))
 }
 
-func Waringf(format string, v ...interface{}) {
-	if LOG_WARING > log.level {
-		return
-	}
-	log.write(LOG_WARING, fmt.Sprintf(format, v...))
-}
-
-func Infof(format string, v ...interface{}) {
-	if LOG_INFO > log.level {
-		return
-	}
-	log.write(LOG_INFO, fmt.Sprintf(format, v...))
-}
-
 func Debugf(format string, v ...interface{}) {
 	if LOG_DEBUG > log.level {
 		return
 	}
 	log.write(LOG_DEBUG, fmt.Sprintf(format, v...))
-}
-
-func Tracef(format string, v ...interface{}) {
-	if LOG_TRACE > log.level {
-		return
-	}
-	log.write(LOG_TRACE, fmt.Sprintf(format, v...))
 }
 
 /*

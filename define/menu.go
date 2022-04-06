@@ -24,7 +24,7 @@ type MenuList struct {
 
 type MenuItem struct {
 	Id     bson.ObjectId `bson:"id" json:"id"`
-	MeunID string        `bson:"menu_id" json:"menu_id"` // menu id
+	MenuID string        `bson:"menu_id" json:"menu_id"` // menu id
 	Name   string        `bson:"name" json:"name"`       // item name
 	Tags   []string      `bson:"tags" json:"tags"`       // tags
 	Price  int           `bson:"price" json:"price"`     // price of each
